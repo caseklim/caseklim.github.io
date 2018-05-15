@@ -1,1 +1,6 @@
-@import "reset";
+// Reset styles for base HTML tags
+@import "base/reset";
+
+// Layout
+@import "blocks/attributes";
+@import "blocks/page";

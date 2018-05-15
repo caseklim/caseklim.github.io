@@ -1,0 +1,58 @@
+.attributes {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    left: -16px;
+    top: -16px;
+
+    content: "{";
+  }
+
+  &::after {
+    position: absolute;
+    left: -16px;
+    bottom: -16px;
+
+    content: "}";
+  }
+
+  &__key {
+    float: left;
+    clear: left;
+    margin-right: 4px;
+  }
+
+  &__value {
+    &::after {
+      content: ",";
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+
+    &--array {
+      &::before {
+        content: "[";
+      }
+
+      &::after {
+        content: "],";
+      }
+
+      &:last-child {
+        &::after {
+          content: "]";
+        }
+      }
+    }
+  }
+
+  // TODO: Come up with a better class name
+  &__list {
+    margin-left: 16px;
+  }
+}

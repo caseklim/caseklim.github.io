@@ -1,27 +1,26 @@
 {
-  "name": "yet-another-webpack-es6-starterkit",
+  "name": "caseklim.github.io",
   "version": "1.0.0",
-  "description": "A light foundation for your next frontend project based on webpack.",
+  "description": "Casey Klimkowsky's personal website",
   "scripts": {
     "build": "webpack --config webpack-prod.config.js --colors",
     "dev": "webpack-dev-server --open --config webpack-dev.config.js --watch --colors"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wbkd/yet-another-webpack-es6-starterkit.git"
+    "url": "git+https://github.com/caseklim/caseklim.github.io.git"
   },
   "keywords": [
     "webpack",
-    "startkit",
     "frontend",
     "es6",
     "javascript",
     "webdev"
   ],
-  "author": "webkid.io",
+  "author": "Casey Klimkowsky",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wbkd/yet-another-webpack-es6-starterkit/issues"
+    "url": "https://github.com/caseklim/caseklim.github.io.git"
   },
   "eslintConfig": {
     "env": {
@@ -36,7 +35,7 @@
       "semi": 2
     }
   },
-  "homepage": "https://github.com/wbkd/yet-another-webpack-es6-starterkit#readme",
+  "homepage": "http://caseklim.github.io/",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
@@ -46,6 +45,7 @@
     "eslint": "^4.18.2",
     "eslint-loader": "^2.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "gh-pages": "^1.1.0",
     "html-webpack-plugin": "^3.0.6",
     "node-sass": "^4.8.2",
     "sass-loader": "^6.0.7",
