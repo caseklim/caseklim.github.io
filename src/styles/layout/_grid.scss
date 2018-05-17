@@ -1,4 +1,4 @@
-.page {
+.grid {
   display: grid;
   grid-column-gap: 0;
   grid-row-gap: 0;
@@ -8,7 +8,7 @@
   height: 100vh;
 
   // TODO: Create a mixin or define breakpoints elsewhere
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 1224px) {
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 50%);
   }
@@ -22,8 +22,11 @@
     width: 100%;
 
     &:first-child {
-      // TODO: Create variables for colors
-      background: #eeeeee;
+      background: $background-aside;
+    }
+
+    &:last-child {
+      background: $background-main;
     }
   }
 }

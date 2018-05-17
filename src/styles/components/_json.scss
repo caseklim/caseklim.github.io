@@ -1,0 +1,110 @@
+.json {
+  margin: 10%;
+  margin-right: auto;
+  max-width: 65%;
+  position: relative;
+
+  font-size: 18px;
+
+  color: $color-brackets;
+
+  // TODO: Create a mixin or define breakpoints elsewhere
+  @media only screen and (max-width: 1224px) {
+    margin-right: 10%;
+
+    font-size: 16px;
+  }
+
+  &::before {
+    position: absolute;
+    left: -16px;
+    top: -16px;
+
+    content: "{";
+  }
+
+  &::after {
+    position: absolute;
+    left: -16px;
+    bottom: -16px;
+
+    content: "}";
+  }
+
+  &__key {
+    float: left;
+    clear: left;
+    margin-right: 4px;
+
+    color: $color-key;
+
+    &::after {
+      color: $color-brackets;
+
+      content: ":";
+    }
+  }
+
+  &__value {
+    margin-left: 16px;
+
+    color: $color-value;
+
+    &::after {
+      color: $color-brackets;
+
+      content: ",";
+    }
+
+    &:last-child {
+      &::after {
+        content: none;
+      }
+    }
+
+    &--array {
+      color: $color-brackets;
+
+      &::before {
+        content: "[";
+      }
+
+      &::after {
+        margin-left: -16px;
+
+        content: "],";
+      }
+
+      &:last-child {
+        &::after {
+          content: "]";
+        }
+      }
+    }
+
+    &--link {
+      color: $color-link;
+
+      a {
+        margin-right: -8px;
+
+        text-decoration: none;
+        word-break: break-all;
+
+        color: inherit;
+
+        &:active,
+        &:focus,
+        &:hover {
+          text-decoration: underline;
+
+          outline: none;
+        }
+      }
+    }
+  }
+
+  &__array {
+    margin-left: -16px;
+  }
+}

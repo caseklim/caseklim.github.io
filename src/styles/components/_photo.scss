@@ -1,0 +1,11 @@
+.photo {
+  margin: 10%;
+  margin-left: auto;
+  max-width: 300px;
+
+  // TODO: Create a mixin or define breakpoints elsewhere
+  @media only screen and (max-width: 1224px) {
+    margin-left: 10%;
+    max-width: 250px;
+  }
+}

@@ -4,36 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Casey Klimkowsky</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
 </head>
 <body>
 
-  <div class="page">
-    <aside class="page__column">
-      <img src="http://via.placeholder.com/150x150">
+  <div class="grid">
+    <aside class="grid__column" role="region">
+      <img class="photo" src="http://via.placeholder.com/300x300" alt="" role="presentation">
     </aside>
 
-    <main class="page__column">
-      <dl class="attributes">
-        <dt class="attributes__key">"name":</dt>
-        <dd class="attributes__value">"Casey Klimkowsky"</dd>
+    <main class="grid__column">
+      <dl class="json">
+        <dt class="json__key">"name"</dt>
+        <dd class="json__value">"Casey Klimkowsky"</dd>
 
-        <dt class="attributes__key">"email":</dt>
-        <dd class="attributes__value">"cklimkowsky@gmail.com"</dd>
+        <dt class="json__key">"email"</dt>
+        <dd class="json__value">"cklimkowsky@gmail.com"</dd>
 
-        <dt class="attributes__key">"websites":</dt>
-        <dd class="attributes__value attributes__value--array">
-          <ul class="attributes__list">
-            <li class="attributes__value">
-              <a href="https://github.com/caseklim">"https://github.com/caseklim"</a>
+        <dt class="json__key">"websites"</dt>
+        <dd class="json__value json__value--array">
+          <ul class="json__array">
+            <li class="json__value json__value--link">
+              <a
+                href="https://github.com/caseklim"
+                rel="noopener noreferrer"
+                role="link"
+                target="_blank"
+              >
+                "https://github.com/caseklim"
+              </a>
             </li>
-            <li class="attributes__value">
-              <a href="https://www.linkedin.com/in/cklimkowsky">"https://www.linkedin.com/in/cklimkowsky"</a>
+            <li class="json__value json__value--link">
+              <a
+                href="https://www.linkedin.com/in/cklimkowsky"
+                rel="noopener noreferrer"
+                role="link"
+                target="_blank"
+              >
+                "https://www.linkedin.com/in/cklimkowsky"
+              </a>
             </li>
+            <li class="json__value json__value--link">
+                <a
+                  href="https://www.linkedin.com/in/cklimkowsky"
+                  rel="noopener noreferrer"
+                  role="link"
+                  target="_blank"
+                >
+                  "https://www.linkedin.com/in/cklimkowsky"
+                </a>
+              </li>
           </ul>
         </dd>
 
-        <dt class="attributes__key">"description":</dt>
-        <dd class="attributes__value">"Lorem ipsum"</dd>
+        <dt class="json__key">"description"</dt>
+        <dd class="json__value">
+          "I'm a software engineer passionate about web and front-end development,
+          as I'm able to express myself creatively while solving problems."
+        </dd>
       </dl>
     </main>
   </div>

@@ -1,6 +1,15 @@
-// Reset styles for base HTML tags
+// Base styles
+@import "base/color";
 @import "base/reset";
+@import "base/typography";
 
-// Layout
-@import "blocks/attributes";
-@import "blocks/page";
+// Component-specific styles
+@import "components/json";
+@import "components/photo";
+
+// Layout styles
+@import "layout/grid";
+
+// Utilities
+@import "utils/mixins";
+@import "utils/variables";
