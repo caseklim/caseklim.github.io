@@ -1,7 +1,10 @@
 // Base styles
-@import "base/color";
 @import "base/reset";
 @import "base/typography";
+
+// Utilities
+@import "utils/mixins";
+@import "utils/variables";
 
 // Component-specific styles
 @import "components/json";
@@ -9,7 +12,3 @@
 
 // Layout styles
 @import "layout/grid";
-
-// Utilities
-@import "utils/mixins";
-@import "utils/variables";
