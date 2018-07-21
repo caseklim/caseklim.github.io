@@ -1,3 +1,67 @@
 body {
   font-family: "Inconsolata", monospace;
+  font-size: $typography-base * 2;
+
+  background: $color-background;
+  color: $color-typography;
+}
+
+a {
+  padding-bottom: 2px;
+  position: relative;
+
+  text-decoration: none;
+
+  border-bottom: 2px solid $color-typography;
+  color: $color-typography;
+
+  &:focus,
+  &:hover {
+    &::after {
+      right: -24px;
+    }
+  }
+
+  &::after {
+    content: "\2192";
+
+    position: absolute;
+    right: -20px;
+
+    transition: right 0.2s ease-out;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  text-transform: none;
+}
+
+h1 {
+  font-size: $typography-h1;
+}
+
+h2 {
+  font-size: $typography-h2;
+}
+
+h3 {
+  font-size: $typography-h3;
+}
+
+h4 {
+  font-size: $typography-h4;
+}
+
+h5 {
+  font-size: $typography-h5;
+}
+
+h6 {
+  font-size: $typography-h6;
 }

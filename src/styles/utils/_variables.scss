@@ -1,7 +1,13 @@
-$background-aside: #f4f1f0;
-$background-main: #ffffff;
+// Color variables
+$color-background: white;
+$color-typography: black;
+$color-highlight: #ededed;
 
-$color-brackets: #6a5750;
-$color-key: #b29e5c;
-$color-link: #da9fde;
-$color-value: #53b29e;
+// Typography size variables
+$typography-base: 8px;
+$typography-h1: $typography-base * 7;
+$typography-h2: $typography-base * 6;
+$typography-h3: $typography-base * 5;
+$typography-h4: $typography-base * 4;
+$typography-h5: $typography-base * 3;
+$typography-h6: $typography-base * 2;

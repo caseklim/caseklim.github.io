@@ -4,67 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Casey Klimkowsky</title>
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display:900"
+    rel="stylesheet"
+  >
 </head>
+
 <body>
-
   <div class="grid">
-    <aside class="grid__column" role="region">
-      <img id="profile-photo" class="photo" alt="" role="presentation">
-    </aside>
+    <header class="grid__header">
+      <div class="grid__header-left">
+        <img class="logo" src="http://via.placeholder.com/75x75">
+      </div>
 
-    <main class="grid__column">
-      <dl class="json">
-        <dt class="json__key">"name"</dt>
-        <dd class="json__value">"Casey Klimkowsky"</dd>
+      <div class="grid__header-right">
+        <ul>
+          <li class="contact contact--name">
+            Casey Ellen Klimkowsky
+          </li>
+          <li class="contact contact--phone">
+            123.456.7890
+          </li>
+          <li class="contact contact--email">
+            <a href="mailto:cklimkowsky@gmail.com">
+              cklimkowsky@gmail.com
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
-        <dt class="json__key">"email"</dt>
-        <dd class="json__value">"cklimkowsky@gmail.com"</dd>
+    <main class="grid__main">
+      <section class="content">
+        <h1 class="content__title">
+          Hey there, I'm a front-end engineer based in San Francisco.
+        </h1>
 
-        <dt class="json__key">"websites"</dt>
-        <dd class="json__value json__value--array">
-          <ul class="json__array">
-            <li class="json__value json__value--link">
-              <a
-                href="https://github.com/caseklim"
-                rel="noopener noreferrer"
-                role="link"
-                target="_blank"
-              >
-                "https://github.com/caseklim"
-              </a>
-            </li>
-            <li class="json__value json__value--link">
+        <section class="content__section">
+          <p class="content__section-title">
+            Here are some places you can find me:
+          </p>
+          <ul class="content__section-body">
+            <li class="content__link">
               <a
                 href="https://www.linkedin.com/in/cklimkowsky"
                 rel="noopener noreferrer"
-                role="link"
                 target="_blank"
               >
-                "https://www.linkedin.com/in/cklimkowsky"
+                LinkedIn
               </a>
             </li>
-            <li class="json__value json__value--link">
-                <a
-                  href="https://www.linkedin.com/in/cklimkowsky"
-                  rel="noopener noreferrer"
-                  role="link"
-                  target="_blank"
-                >
-                  "https://www.linkedin.com/in/cklimkowsky"
-                </a>
-              </li>
+            <li class="content__link">
+              <a
+                href="https://github.com/caseklim"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                GitHub
+              </a>
+            </li>
+            <li class="content__link">
+              <a
+                href="https://www.instagram.com/caseklim/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Instagram
+              </a>
+            </li>
           </ul>
-        </dd>
+        </section>
 
-        <dt class="json__key">"description"</dt>
-        <dd class="json__value">
-          "I'm a software engineer passionate about web and front-end development,
-          as I'm able to express myself creatively while solving problems."
-        </dd>
-      </dl>
+        <section class="content__section">
+          <p class="content__section-title">
+            You can download my resume here:
+          </p>
+          <div class="content__section-body">
+            <a
+              class="content__link"
+              href="#"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Get it
+            </a>
+          </div>
+        </section>
+      </section>
     </main>
-  </div>
 
+    <footer class="grid__footer"></footer>
+  </div>
 </body>
 </html>

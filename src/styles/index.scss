@@ -1,14 +1,16 @@
-// Base styles
-@import "base/reset";
-@import "base/typography";
-
 // Utilities
 @import "utils/mixins";
 @import "utils/variables";
 
-// Component-specific styles
-@import "components/json";
-@import "components/photo";
+// Base styles
+@import "base/reset";
+@import "base/typography";
 
 // Layout styles
+@import "layout/body";
+@import "layout/content";
 @import "layout/grid";
+
+// Component styles
+@import "components/contact";
+@import "components/logo";

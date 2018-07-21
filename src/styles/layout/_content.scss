@@ -1,0 +1,44 @@
+.content {
+  display: grid;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+  height: 100%;
+
+  &__title {
+    grid-column: span 2;
+  }
+
+  &__section {
+    padding-top: 10%;
+  }
+
+  &__section-title {
+    display: inline-block;
+    margin-bottom: 18px;
+    position: relative;
+
+    &::after {
+      content: "";
+
+      bottom: -50%;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      right: 0;
+      width: 100%;
+      z-index: -1;
+
+      background-color: $color-highlight;
+    }
+  }
+
+  &__section-body {
+    display: block;
+  }
+
+  &__link {
+    margin-bottom: 12px;
+  }
+}
