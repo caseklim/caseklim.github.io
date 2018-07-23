@@ -7,20 +7,14 @@
   height: 100%;
 
   &__header {
+    align-items: flex-start;
     display: flex;
     grid-column: span 4;
     justify-content: space-between;
     height: 100%;
     position: relative;
     width: 100%;
-  }
 
-  &__header-left,
-  &__header-right {
-    width: 50%;
-  }
-
-  &__header-right {
     text-align: right;
   }
 
