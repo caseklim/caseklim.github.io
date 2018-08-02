@@ -1,3 +1,8 @@
 .logo {
   border-radius: 50%;
+  margin-right: 24px;
+
+  @include breakpoint("tablet") {
+    margin-right: 0;
+  }
 }

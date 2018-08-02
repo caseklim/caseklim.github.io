@@ -1,6 +1,7 @@
 body {
   font-family: "Inconsolata", monospace;
   font-size: $typography-base * 2;
+  font-weight: 400;
 
   background: $color-background;
   color: $color-typography;
@@ -39,6 +40,7 @@ h4,
 h5,
 h6 {
   font-family: "Playfair Display", serif;
+  font-weight: 900;
   text-transform: none;
 }
 
